@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>  
+    <div class="container">
+        <div class="cal">
+            <input id="text1" >
+            <br>
+            <table>
+                <tr>
+                    <td><button  type="button" onclick="fun1('9')" id="nine">9</button></td>
+                    <td><button  type="button" onclick="fun1('8')" id="eight">8</button></td>
+                    <td><button  type="button" onclick="fun1('7')" id="seven">7</button></td>
+                    <td><button  type="button" value="*" onclick="fun(this.value)" id="multiply">*</button></td>
+                </tr>
+                <tr>
+                    <td><button  type="button" onclick="fun1('6')" id="six">6</button></td>
+                    <td><button  type="button" onclick="fun1('5')" id="five">5</button></td>
+                    <td><button  type="button" onclick="fun1('4')" id="four">4</button></td>
+                    <td><button  type="button" value="-"onclick="fun(this.value)" id="subtraction">-</button></td>
+                </tr>   
+                <tr>
+                    <td><button  type="button" onclick="fun1('3')" id="three">3</button></td>
+                    <td><button  type="button" onclick="fun1('2')" id="two">2</button></td>
+                    <td><button  type="button" onclick="fun1('1')" id="one">1</button></td>
+                    <td><button  type="button" value="+"onclick="fun(this.value)" id="plus">+</button></td>
+                </tr>
+                <tr>
+                    <td><button  type="button" onclick="fun1('.')" id="dot">.</button></td>
+                    <td><button  type="button" onclick="fun1('0')" id="zero">0</button></td>
+                    <td><button  type="button" value="/"onclick="fun(this.value)" id="devision">/</button></td>
+                    <td><button  type="button" onclick="equal()" id="equal1">=</button></td>
+                </tr>
+            </table>
+            <button class="btn1" id="clr" onclick="clrr()">CLEAR</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
